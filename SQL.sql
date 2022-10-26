@@ -1,0 +1,14 @@
+use accesswayprimebank;
+select * from employeedata where JobLevel = 4 and JobRole ='manager';
+select * from employeedata where JobLevel = 1 or JobRole ='manager';
+select * from employeedata where (JobLevel = 4 and JobRole ='Manager') or (Department = 'Sales');
+select * from employeedata where Department like 'Re%';
+select * from employeedata where Department like '%Re';
+select * from employeedata where Department like '__s%';
+select * from employeedata where jobrole like '_______';
+select * from employeedata where jobrole not like '_______';
+select * from employeedata where jobsatisfaction in(1,3,5);
+select * from employeedata where joblevel <> 5;
+select * from employeedata where joblevel != 5;
+select * from employeedata where department is null;
+select * from employeedata where department is not null;
